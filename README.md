@@ -1,2 +1,2 @@
 # sample_php
-Sample PHP code
+Sample PHP code to return IPv4 address.
