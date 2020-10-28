@@ -11,7 +11,7 @@ jobs:
     working_directory: /var/www/html/test01
     steps:
     - checkout
-    - run: apt install composer
+    - run: ls >/dev/null
 
 workflows:
   test and deploy:
