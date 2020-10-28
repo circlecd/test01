@@ -22,7 +22,7 @@ Class IPv4Addr {
 	}
 
 	function FormatRemoteAddr() {
-	        return "Yourssssiiss Remote IPV4 address is:" . $this->GetRemoteAddr();
+	        return "Your correct Remote IPV4 address is:" . $this->GetRemoteAddr();
 	}	
 
 }
