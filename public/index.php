@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-  <input type="submit" name="submit" value="Get your IPv4 address">  
+  <input type="submit" name="submit" value="Find your IPv4 address">  
 </form>
 
 <?php 
