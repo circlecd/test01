@@ -17,6 +17,7 @@ workflows:
   test and deploy:
     jobs:
     - test
+      context: MyContext01
     - heroku/deploy-via-git:
         requires:
         - test
