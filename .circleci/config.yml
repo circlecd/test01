@@ -11,8 +11,8 @@ jobs:
     working_directory: /var/www/html/test01/tests
     steps:
     - checkout
-   #- run: php test01.php
-    - ls -R
+    - run: 
+        command: php test01.php
 
 workflows:
   test and deploy:
