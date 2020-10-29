@@ -19,7 +19,7 @@ workflows:
     - test:
         context: MyDocker01
     - heroku/deploy-via-git:
-        context: MyContext01
+        context: MyHeroku01
         requires:
         - test
         filters:
