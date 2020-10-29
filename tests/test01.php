@@ -1,6 +1,6 @@
 <?php
 
-include_once ("../src/IPv4.php");
+include_once ("./src/IPv4.php");
 
 $yourAddr = "";
 
