@@ -8,11 +8,11 @@ jobs:
       auth:
         username: cdinro73
         password: $DOCKERHUB_PASSWORD 
-    working_directory: /var/www/html/test01/tests
+    working_directory: /var/www/html/test01
     steps:
     - checkout
     - run: 
-        command: ls -R
+        command: php tests/test01.php
 
 workflows:
   test and deploy:
