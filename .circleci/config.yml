@@ -4,10 +4,10 @@ orbs:
 jobs:
   test:
     docker:
-            - image: circleci/php:apache
-              auth:
-                username: cdinro73
-                password: ZxC123DsA 
+    - image: circleci/php:apache
+      auth:
+        username: cdinro73
+        password: $DOCKERHUB_PASSWORD 
     working_directory: /var/www/html/test01
     steps:
     - checkout
@@ -16,7 +16,8 @@ jobs:
 workflows:
   test and deploy:
     jobs:
-    - test
+    - test:
+        context: MyDocker01
     - heroku/deploy-via-git:
         context: MyContext01
         requires:
