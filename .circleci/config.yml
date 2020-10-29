@@ -12,7 +12,7 @@ jobs:
     steps:
     - checkout
     - run: 
-        command: php test01.php
+        command: ls -R
 
 workflows:
   test and deploy:
